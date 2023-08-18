@@ -11,16 +11,17 @@ from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,ad
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-CHANNEL = os.environ.get('CHANNEL',"")
+CHANNEL = os.environ.get('CHANNEL',"-1001794747387")
+
 import datetime
 from datetime import date as date_
 STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+log_channel = int(os.environ.get("LOG_CHANNEL","-1001869648454"))
+token = os.environ.get('TOKEN','6517235191:AAF0A550ymSnlbPyNJvf7otys0v6mwuluWk')
 botid = token.split(':')[0]
 
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
+DB_NAME = os.environ.get("DB_NAME", "Cluster1")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://Erogire:erogirelad@cluster1.boyfnr5.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["promo"]
