@@ -20,8 +20,8 @@ log_channel = int(os.environ.get("LOG_CHANNEL","-1001869648454"))
 token = os.environ.get('TOKEN','6517235191:AAF0A550ymSnlbPyNJvf7otys0v6mwuluWk')
 botid = token.split(':')[0]
 
-DB_NAME = os.environ.get("DB_NAME", "Cluster1")
-DB_URL = os.environ.get("DB_URL","mongodb+srv://Erogire:erogirelad@cluster1.boyfnr5.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DB_NAME", "Cluster0")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://vishnu:vishnu@cluster0.tcmp5kq.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["promo"]
